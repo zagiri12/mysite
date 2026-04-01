@@ -1,42 +1,103 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PWCORE.CC - Private Email Infrastructure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PWCORE - Secure private email infrastructure and managed communications domain.">
+    <meta name="robots" content="index, nofollow">
+    <title>PWCORE | Secure Infrastructure</title>
     <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a1a;
-            color: #f0f0f0;
-            text-align: center;
-            padding-top: 100px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
         }
-        h1 {
-            color: #ffffff;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: center;
         }
-        p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: var(--text-main);
         }
-        .contact {
-            margin-top: 40px;
-            color: #a0a0a0;
+        .logo span {
+            color: var(--accent);
+        }
+        .status-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+        .description {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
         }
         a {
-            color: #3498db;
+            color: var(--accent);
             text-decoration: none;
+            transition: color 0.2s;
         }
-    }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>PWCORE</h1>
-    <p>Это технический домен для обслуживания внутренней почтовой инфраструктуры проекта PWCORE.</p>
-    <p class="contact">Для вопросов безопасности и связи: admin@pwcore.cc</p>
+
+    <div class="container">
+        <div class="logo">PW<span>CORE</span></div>
+        <div class="status-badge">● Systems Operational</div>
+        
+        <p class="description">
+            This domain is utilized exclusively for managed private infrastructure and secure corporate communications. 
+            It is not intended for public access or registration. All internal services are monitored and protected.
+        </p>
+        
+        <p class="description" style="font-size: 1rem;">
+            For security inquiries, abuse reports, or administrative contact, please reach out to:<br>
+            <a href="mailto:admin@pwcore.cc">admin@pwcore.cc</a>
+        </p>
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 PWCORE Infrastructure. All rights reserved. | 
+        <a href="mailto:abuse@pwcore.cc">Abuse Policy</a> | 
+        <a href="mailto:admin@pwcore.cc">Privacy Contact</a>
+    </footer>
+
 </body>
 </html>
